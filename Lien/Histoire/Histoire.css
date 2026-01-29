@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+    border-radius: 20px;
+    background: #304231;
+    background: linear-gradient(0deg, rgba(48, 66, 49, 1) 0%, rgba(52, 222, 22, 1) 100%);
+}
