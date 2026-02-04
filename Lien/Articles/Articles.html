@@ -1,28 +1,128 @@
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
-    <Title>Collaborateurs de Terre de Jardin®</Title>
-    <link rel="stylesheet" href="Site web vitrine.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Jardinage - Articles de Qualité</title>
+    <link rel="stylesheet" href="test1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <img src="Images/" alt="Image du logo officiel de l'entreprise Terre de Jardin®. Elle a l'apparence d'une feuille dorée entouré de laurier." title="Logo officiel de l'entreprise Terre de Jardin®.">
-        <h1>Terre de Jardin®</h1>
-    </header>
-    
-    <nav>
-        <h2>
-            <a href="../../Site web vitrine.html">Retour</a>
-            <a href="../Collaborateurs/Collaborateurs.html">Collaborateurs</a>
-            <a href="../Histoire/Histoire.html">Histoire</a>
-        </h2>
-    </nav>
+    <div class="container">
+        <header>
+            <span class="date">Depuis</span>
+            <img src="Images/Logo d'entreprise.png" alt="Image du logo officiel de l'entreprise Terre de Jardin®. Elle a l'apparence d'une feuille dorée entouré de laurier." title="Logo officiel de l'entreprise Terre de Jardin®." width="150" height="125">
+            <span class="date">1945</span>
+            <h1>Terre de Jardin®</h1>
+            <p class="subtitle">Faites fleurir vos rêves !</p>
+        </header>
 
-    <main>
-        
-    </main>
+        <nav>
+            <a href="../../Site web vitrine.html">Retour</a>
+        </nav>
+
+        <div class="products-grid">
+            <!-- Article 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/gantdejardinage.webp" 
+                         alt="Tondeuse à gazon" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gants de jardinage en cuir</h3>
+                    <p class="product-description">Gants de protection de jardinage, résistants à l'usure, noirs, taille S.</p>
+                    <div class="product-price">29,99 €</div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/arrosoir.jpg" 
+                         alt="Arrosoir" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Arrosoir de jardin</h3>
+                    <p class="product-description">Arrosoir de jardin en métal galvanisé, résistant et durable, 10 litres, 54 cm.</p>
+                    <div class="product-price">34,99 €</div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/sécateur.webp" 
+                         alt="Sécateur" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sécateur de jardin</h3>
+                    <p class="product-description">Lame en acier forgé et haute qualité, revêtement anti-adhésif, coupe 13mm Black et Decker.</p>
+                    <div class="product-price">24,99 €</div>
+                </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/tuyaudarrosage.jpg" 
+                         alt="Tuyau d'arrosage" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Tuyau d'arrosage extensible</h3>
+                    <p class="product-description">Tuyau d'arrosage de jardin polyester, extensible jusqu'à 15 mètres.</p>
+                    <div class="product-price">39,99 €</div>
+                </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/tondeuseàgazon.webp" 
+                         alt="Tondeuse à gazon" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Tondeuse à gazon</h3>
+                    <p class="product-description">Tondeuse à gazon thermique, moteur HONDA GXV192, efficace contre les zombies.</p>
+                    <div class="product-price">1 999,99 €</div>
+                </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="Images/archedejardin.webp" 
+                         alt="Arche de jardin" 
+                         class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Arche de jardin</h3>
+                    <p class="product-description">Décoration, plantes grimpantes Arceau à rosiers flèches d'inspiration, 255cm.</p>
+                    <div class="product-price">45,99 €</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animation au clic sur les boutons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                this.textContent = '✓ Ajouté !';
+                this.style.backgroundColor = '#4caf50';
+                
+                setTimeout(() => {
+                    this.textContent = 'Ajouter au panier';
+                    this.style.backgroundColor = '#2e7d32';
+                }, 2000);
+            });
+        });
+    </script>
 </body>
+</html>

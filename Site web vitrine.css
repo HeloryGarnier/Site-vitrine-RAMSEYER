@@ -1,18 +1,26 @@
 header {
-    background-image: url(image.avif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    text-align: center;
-    color: aliceblue;
-    font-size: 2em;
-    font-weight: 600;
-    padding: 20px;
+text-align: center;
+padding: 40px 20px;
+background-image: url(image.avif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:cover;
+color: white;
+border-radius: 15px;
+margin-bottom: 40px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+font-size: 2vw;
+font-weight: 600;
 }
 
 .date {
     font-style: italic;
     text-decoration: underline;
+}
+
+.img {
+    width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -25,15 +33,15 @@ h1 {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 15px;
-    border-radius: 20px;
-    background: #304231;
-    background: linear-gradient(0deg, rgba(48, 66, 49, 1) 0%, rgba(52, 222, 22, 1) 100%);
+    background-color: #81c784;
+    font-size: 1.75vw;
 }
+
+.centre {
+    text-align: center;
+}
+
+
 
 footer {
     background-color: black;
@@ -56,4 +64,10 @@ article {
 
 .transform {
     border: #24b424 10px double;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+padding: 20px;
 }
