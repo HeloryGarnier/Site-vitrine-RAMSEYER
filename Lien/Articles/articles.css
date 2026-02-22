@@ -1,32 +1,3 @@
-header {
-text-align: center;
-padding: 40px 20px;
-background-image: url(Images/image.avif);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size:cover;
-color: white;
-border-radius: 15px;
-margin-bottom: 40px;
-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-font-weight: 600;
-}
-
-.date {
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 2vw;
-}
-
-.citation {
-    font-size: 4vw;
-}
-
-.img {
-    width: 100%;
-    height: auto;
-}
-
 h1 {
     color: #008000;
     text-align: center;
@@ -34,6 +5,12 @@ h1 {
     font-optical-sizing: auto;
     font-family: "Pacifico", cursive;
     font-weight: 300;
+}
+
+.date {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 2vw;
 }
 
 nav {
@@ -81,22 +58,133 @@ a:hover {
     margin-left: 4vw;
 }
 
-article {
-    margin: 100px;
-    text-align: center;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-image: url(Images/image.avif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-size: 3vw;
+            font-weight: 600;
+        }
+
+.citation {
+    font-size: 4vw;
 }
 
-section {
-    background-color: green;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 50px;
-    padding: 50px;
-    color: white;
-    text-align: center;
-}
 
-        footer {
+
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .product-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease, filter 0.3s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.15) rotate(2deg);
+            filter: brightness(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 1.3em;
+            color: #2e7d32;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .product-price {
+            font-size: 1.8em;
+            color: #1b5e20;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #a5d6a7 0%, #81c784 100%);
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #1b5e20;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff5722;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+                footer {
             background-color: #2c4a2e;
             color: #f0f0f0;
             padding: 50px 0 0 0;
@@ -306,5 +394,3 @@ section {
             margin: 0 10px;
             color: #3d5c40;
         }
-
-
