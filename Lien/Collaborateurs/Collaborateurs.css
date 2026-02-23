@@ -44,7 +44,7 @@ nav {
 .animation {
     background-color: #3498db;
     padding: 1.5vw 1.5vw;
-    font-size: 1vw;
+    font-size: 0.9vw;
     border: none;
     border-radius: 1vw;
     cursor: pointer;
@@ -74,11 +74,11 @@ a:hover {
 
 .conteneur {
     display: grid;
-    grid-template-columns: 13vw 13vw 13vw 13vw;
+    grid-template-columns: 12vw 12vw 12vw;
     grid-template-rows: 4vw;
-    gap: 12vw;
+    gap: 23vw;
     margin: 1.5vw;
-    margin-left: 4vw;
+    margin-left: 5vw;
 }
 
 article {
@@ -87,7 +87,7 @@ article {
 }
 
 section {
-    background-color: green;
+    background-color:hsla(172, 62%, 28%, 0.745);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 50px;
